@@ -1,0 +1,8 @@
+title: "Vera Mezhvynskiy"
+description: "Data Science & Software Development Portfolio"
+theme: minima
+
+header_pages:
+  - index.md
+  - projects.md
+  - resume.md
