@@ -3,202 +3,212 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="The brain that changes itself">
-    <meta name="author" content="Vera M">
-    <title>The brain that changes itself</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Cardo:700|Lora:400" rel="stylesheet" type="text/css">
+    <meta name="description" content="Vera Mezhvynskiy — Computer Science graduate student at Boston University and software developer working in Python, JavaScript and data science.">
+    <meta name="author" content="Vera Mezhvynskiy">
+    <title>Vera Mezhvynskiy — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 </head>
 
 <body>
-<header class="text-center py-5">
-  <h1>Vera Mezhvynskiy</h1>
-  <p class="lead">Data Science Graduate Student | Software Developer (JavaScript & Python)</p>
-  <a href="#projects" class="btn btn-primary">View Projects</a>
-  <a href="resume.pdf" class="btn btn-outline-secondary" target="_blank">Resume</a>
-  <a href="cover_letter.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary">Cover Letter</a>
+<nav class="nav">
+    <div class="wrap nav-inner">
+        <a href="#top" class="brand">Vera<span>.</span></a>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+            <span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="resume.pdf" target="_blank" rel="noopener" class="nav-cta">Resume</a></li>
+        </ul>
+    </div>
+</nav>
+
+<header class="hero" id="top">
+    <div class="wrap">
+        <p class="eyebrow">Boston, MA · Open to Summer 2027 internships</p>
+        <h1>Hi, I'm Vera.<br><em>I build with data and code.</em></h1>
+        <p class="hero-lead">
+            M.S. Computer Science student (Data-Centric Computing) at Boston University,
+            with a background in mathematics and professional experience building
+            React applications. I work in Python, JavaScript, SQL and C++.
+        </p>
+        <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View projects</a>
+            <a href="resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost">Download resume</a>
+            <a href="cover_letter.pdf" target="_blank" rel="noopener" class="btn btn-ghost">Cover letter</a>
+        </div>
+    </div>
 </header>
 
-<section id="projects" class="container my-5">
-  <h2>Data Science Projects</h2>
-  <!-- Project Card -->
-  <div class="card mb-3">
-    <div class="card-body">
-      <h5 class="card-title">Project Name</h5>
-      <p class="card-text">Short summary of the problem, dataset, models used, and key findings.</p>
-      <a href="https://github.com/tori25/repo-name" class="card-link">GitHub Code</a>
-    </div>
-  </div>
-</section>
+<main>
+    <section id="about" class="section">
+        <div class="wrap grid-2">
+            <div>
+                <h2 class="section-title">About</h2>
+            </div>
+            <div class="prose">
+                <p>
+                    I started out as a mathematics teacher, moved into software development
+                    building responsive web interfaces and React applications in Kyiv, and
+                    am now deepening my work in algorithms, databases, machine learning and
+                    artificial intelligence at Boston University.
+                </p>
+                <p>
+                    I enjoy problems where careful analysis meets practical engineering —
+                    turning messy data into models and clear answers, and turning ideas into
+                    software people can actually use.
+                </p>
+                <ul class="chips" aria-label="Skills">
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>SQL</li>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>scikit-learn</li>
+                    <li>NumPy</li>
+                    <li>Machine Learning</li>
+                    <li>Data Analysis</li>
+                    <li>Relational Databases</li>
+                    <li>Data Structures &amp; Algorithms</li>
+                    <li>Testing &amp; Debugging</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-<section id="lifeSection">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-12">
-                <div class="row text-center">
-                    <div class="lifeSection-right col-12">
-                                <span><i class="fa fa-quote-left"></i> &emsp;“We see with our brains, not with our eyes”&emsp;
-                                     <i class="fa fa-quote-right"></i></span> <br>
-                        <footer class="blockquote-footer"> <cite>― Norman Doidge, The Brain That Changes Itself: Stories of Personal Triumph from the Frontiers of Brain Science</cite>
-                        </footer>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    <section id="projects" class="section section-alt">
+        <div class="wrap">
+            <h2 class="section-title">Selected projects</h2>
+            <p class="section-sub">Data science and machine learning work from my graduate studies, plus a few earlier web projects.</p>
 
-<section id="plasticity">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-12">
-                <h2>Stories of Personal Triumph from the Frontiers of Brain Science</h2> <hr>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-2"></div>
-            <div class="col-12 col-lg-8 text-justify">
-                <li> Discover the awesome regenerative power of your brain.</li>
-                <li>The brain changes itself through processes like “unmasking.”</li>
-                <li>Stimulating activities activities can change the structure of the brain .</li>
-                <li>The brain is plastic , when the body changes the brain changes too .</li>
-                <li>Brains can be rewired through shaping and brain exercises.</li>
-                <li>"With obsessions and compulsions , the more you do it , the more you want to do it ; the less you do it , the less you want to do it . "</li>
-                <li>Imagination alone can help the brain overcame the painn of lost limbs.</li>
-                <li>Imaginative thinking can change the brain by improving performance and strengthening muscles .</li>
-                <li>Neuronal stem cells can help us preserve our brains in old age.</li>
-                <li>Mirror region takeover is another kind of brain plasticity .</li>
-            </div>
-            <div class="col-lg-2"></div>
-        </div>
-        <div class="row">
-            <div class="col-lg-2"></div>
-            <div class="col-12 col-lg-8">
-                <img id="lpvolcano" src="https://cdna.artstation.com/p/assets/images/images/003/441/610/large/lars-bonsch-kleiner-prinz-final-s.jpg?1473713379">
-                <footer class="blockquote-footer" style="margin-top:2%;">
-                    Artist: <a target="_blank" href="https://www.artstation.com/betalars">Lars Bönsch</a>
-                </footer>
-            </div>
-            <div class="col-lg-2"></div>
-        </div>
-    </div>
-</section>
+            <div class="cards">
+                <article class="card">
+                    <p class="card-tag">Machine Learning · Python</p>
+                    <h3>Boston Housing Price Prediction</h3>
+                    <p>Predicting median house values from structured housing and neighborhood features. Built for CS 506 (Data Science Tools and Applications).</p>
+                    <a href="https://github.com/tori25/Boston-Housing-Price-Prediction-Project-CS-506-" target="_blank" rel="noopener" class="card-link">View on GitHub <span aria-hidden="true">→</span></a>
+                </article>
 
-<section id="thelife">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-12">
-                <div class="row">
-                    <div class="col-12 col-lg-12">
-                        <h2>THE LIFE </h2> <hr>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-2"></div>
-                    <div class="col-6 col-lg-3 text-justify">
-                        <p>“This is my simple religion. There is no need for temples; no need for complicated philosophy. Our own brain, our own heart is our temple; the philosophy is kindness.”  ― Dalai Lama XIV, The Dalai Lama: A Policy of Kindness: An Anthology of Writings By and About the Dalai Lama</p>
-                    </div>
-                    <div class="col-6 col-lg-5">
-                        <blockquote class="blockquote blockquote text-right jumbotron">
-                            <p><i class="fa fa-quote-left"></i> &emsp;I would not put a thief in my mouth to steal my brains.&emsp;<i class="fa fa-quote-right"></i></p>
-                            <footer class="blockquote-footer"><cite> William Shakespeare, Othello</cite></footer>
-                        </blockquote>
-                    </div>
-                    <div class="col-lg-2"></div>
-                </div>
+                <article class="card">
+                    <p class="card-tag">NLP · Kaggle</p>
+                    <h3>Semantic Embeddings for News Headlines</h3>
+                    <p>Low-dimensional semantic embeddings for news headlines using TF-IDF, SVD and LSA, optimized for clustering-based evaluation.</p>
+                    <a href="https://github.com/tori25/First_kaggle_competition" target="_blank" rel="noopener" class="card-link">View on GitHub <span aria-hidden="true">→</span></a>
+                </article>
+
+                <article class="card">
+                    <p class="card-tag">Applied ML · scikit-learn</p>
+                    <h3>Classical ML from Scratch</h3>
+                    <p>One-hot encoding with NumPy, KNN implemented from scratch and with scikit-learn, decision trees, random forests and SVMs, with analysis of overfitting and the curse of dimensionality.</p>
+                    <a href="https://github.com/tori25/Machine_learning_ps1" target="_blank" rel="noopener" class="card-link">View on GitHub <span aria-hidden="true">→</span></a>
+                </article>
+
+                <article class="card">
+                    <p class="card-tag">Data Science · Jupyter</p>
+                    <h3>CS 506 Midterm</h3>
+                    <p>Exploratory analysis and predictive modeling in Jupyter notebooks for the CS 506 midterm project.</p>
+                    <a href="https://github.com/tori25/CS506_midterm" target="_blank" rel="noopener" class="card-link">View on GitHub <span aria-hidden="true">→</span></a>
+                </article>
+
+                <article class="card">
+                    <p class="card-tag">Software Design · Java</p>
+                    <h3>Object-Oriented Design Projects</h3>
+                    <p>Projects from CS 611: Object-Oriented Software Principles and Design.</p>
+                    <a href="https://github.com/tori25/OOP-Assignments-" target="_blank" rel="noopener" class="card-link">View on GitHub <span aria-hidden="true">→</span></a>
+                </article>
+
+                <article class="card">
+                    <p class="card-tag">Web · JavaScript</p>
+                    <h3>Snake Game</h3>
+                    <p>A browser version of the classic snake game written in plain JavaScript.</p>
+                    <a href="https://github.com/tori25/snake-game-master" target="_blank" rel="noopener" class="card-link">View on GitHub <span aria-hidden="true">→</span></a>
+                </article>
+            </div>
+
+            <p class="more"><a href="https://github.com/tori25?tab=repositories" target="_blank" rel="noopener">See all repositories on GitHub <span aria-hidden="true">→</span></a></p>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="wrap grid-2">
+            <div>
+                <h2 class="section-title">Experience</h2>
+            </div>
+            <div>
+                <ol class="timeline">
+                    <li>
+                        <p class="when">Jun 2018 – Jun 2019</p>
+                        <h3>Software Developer <span>· Playtech, Kyiv</span></h3>
+                        <p>Maintained React applications and shipped new features; built responsive interfaces in HTML, CSS and JavaScript; tested and debugged sites to improve functionality and performance.</p>
+                    </li>
+                    <li>
+                        <p class="when">Mar 2017 – May 2018</p>
+                        <h3>Software Developer <span>· TaSoft, Kyiv</span></h3>
+                        <p>Developed and tested React applications within an Agile team and built responsive web applications.</p>
+                    </li>
+                    <li>
+                        <p class="when">Aug 2013 – Jun 2014</p>
+                        <h3>Math Teacher <span>· Middle School Panasesti, Moldova</span></h3>
+                        <p>Taught middle school mathematics, adapted lessons to different learning needs and used assessments to track student progress.</p>
+                    </li>
+                </ol>
+
+                <h2 class="section-title sub">Education</h2>
+                <ol class="timeline">
+                    <li>
+                        <p class="when">Expected Jan 2028</p>
+                        <h3>M.S. Computer Science, Data-Centric Computing <span>· Boston University</span></h3>
+                    </li>
+                    <li>
+                        <p class="when">May 2013</p>
+                        <h3>B.S. Mathematics &amp; Computer Science <span>· State University, Moldova</span></h3>
+                        <p>Merit-based scholarship recipient.</p>
+                    </li>
+                </ol>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="book">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-12">
-                <div class="row">
-                    <div class="col-12 col-lg-12">
-                        <h2>Summary</h2> <hr>
-                    </div>
-                </div>
-                <div class="row text-justify">
-                    <div class="col-lg-2"></div>
-                    <div class="col-12 col-lg-8">
-                        <p> <b> Our brains are remarkably changeable.We can grow new neurons and extend the life of existing ones through changing our thought processes and adapting our behavior.  </b> </p>
-                    </div>
-                    <div class="col-lg-2"></div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-2"></div>
-                    <div class="col-12 col-lg-8 text-justify">
-                        <p>Understanding the plasticity of our brain means that we have the ability to overcome psychological disorders and recover from physical injury."</p>
-                    </div>
-                    <div class="col-lg-2"></div>
-                </div>
+    <section id="contact" class="section section-alt">
+        <div class="wrap contact">
+            <h2 class="section-title">Let's talk</h2>
+            <p class="section-sub">I'm looking for software engineering and data science internships for Summer 2027. The fastest way to reach me is email.</p>
+            <div class="hero-actions center">
+                <a href="mailto:vera.mezhvynskiy@gmail.com" class="btn btn-primary">vera.mezhvynskiy@gmail.com</a>
+                <a href="https://github.com/tori25" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+</main>
 
-<footer>
-    <div class="row">
-        <div class="col-12 text-center">
-            <hr>
-            <p id="pao"> 2018 &copy; Vera Mezhvynskiy </p>
-        </div>
+<footer class="footer">
+    <div class="wrap">
+        <p>&copy; <span id="year">2026</span> Vera Mezhvynskiy</p>
     </div>
 </footer>
 
 <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-    window.sr = ScrollReveal();
-
-    sr.reveal('.btn', {
-        duration: 2000,
-        origin: 'top',
-        distance: '60px',
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+        const open = links.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', open);
     });
-
-    sr.reveal('#lifeSection', {
-        duration: 2000,
-        origin: 'bottom',
-        viewFactor: 0.3,
-        delay: 1000,
-        reset: true
+    links.addEventListener('click', (e) => {
+        if (e.target.tagName === 'A') {
+            links.classList.remove('open');
+            toggle.setAttribute('aria-expanded', false);
+        }
     });
-
-    sr.reveal('#plasticity', {
-        duration: 2000,
-        origin: 'bottom',
-        viewFactor: 0.5,
-        reset: true
-    });
-
-    sr.reveal('#thelife', {
-        duration: 2000,
-        origin: 'bottom',
-        viewFactor: 0.3,
-        reset: true
-    });
-
-    sr.reveal('#book', {
-        duration: 2000,
-        origin: 'bottom',
-        viewFactor: 0.3,
-        reset: true
-    });
-
-    sr.reveal('#pao', {
-        duration: 2000,
-        origin: 'right',
-        distance: "100px",
-        viewFactor: 0.2,
-        reset: true
-    });
-
 </script>
-
 </body>
 </html>
