@@ -38,6 +38,7 @@ body {
 }
 
 a { color: var(--accent); text-decoration: none; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
 a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 h1, h2, h3 { margin: 0; line-height: 1.2; }
@@ -54,6 +55,7 @@ h1, h2, h3 { margin: 0; line-height: 1.2; }
     position: sticky;
     top: 0;
     z-index: 10;
+    background: var(--bg);
     background: color-mix(in srgb, var(--bg) 85%, transparent);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--line);
@@ -132,7 +134,8 @@ h1, h2, h3 { margin: 0; line-height: 1.2; }
 .hero h1 {
     font: 500 clamp(40px, 6.5vw, 72px)/1.05 var(--serif);
     letter-spacing: -.02em;
-    max-width: 16ch;
+    max-width: 18ch;
+    text-wrap: balance;
 }
 .hero h1 em { color: var(--accent); font-style: italic; }
 
@@ -171,7 +174,7 @@ h1, h2, h3 { margin: 0; line-height: 1.2; }
     font: 500 34px var(--serif);
     letter-spacing: -.01em;
 }
-.section-title.sub { margin-top: 64px; }
+.row-gap { margin-top: 72px; }
 
 .section-sub {
     max-width: 60ch;
@@ -183,6 +186,7 @@ h1, h2, h3 { margin: 0; line-height: 1.2; }
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 48px;
+    align-items: start;
 }
 
 .prose p { margin: 0 0 18px; }
@@ -319,6 +323,7 @@ h1, h2, h3 { margin: 0; line-height: 1.2; }
     .section { padding: 64px 0; }
 
     .grid-2 { grid-template-columns: 1fr; gap: 24px; }
+    .row-gap { margin-top: 48px; }
 
     .cards { grid-template-columns: 1fr; }
 }
