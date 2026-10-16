@@ -247,6 +247,42 @@ h1, h2, h3 { margin: 0; line-height: 1.2; }
 
 .more { margin: 36px 0 0; font-weight: 600; }
 
+/* Certifications */
+.certs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.cert {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 22px 24px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+}
+.cert h3 { font: 600 19px var(--serif); margin: 14px 0 4px; }
+.cert .issuer { margin: 0; color: var(--muted); font-size: 15px; }
+.cert .when { margin: 4px 0 0; }
+.cert a { margin-top: 14px; font-size: 15px; font-weight: 600; }
+
+.status {
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+}
+.status.done { background: var(--accent-soft); color: var(--accent); }
+.status.progress { background: var(--bg-alt); color: var(--text); border: 1px solid var(--line); }
+.status.planned { color: var(--muted); border: 1px dashed var(--line); }
+
 /* Timeline */
 .timeline {
     margin: 0;
